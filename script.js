@@ -12,3 +12,10 @@ function slideNext(){
     }
     slider.style.transform = `translate(${-imageWidth * counter}px)`;
 }
+function slidePrev(){
+    counter--;
+    if(counter < 0){
+        counter = images.length - 1;
+    }
+    slider.style.transform = `translate(${-imageWidth * counter}px)`;
+}
