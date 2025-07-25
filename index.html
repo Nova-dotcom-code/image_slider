@@ -1,22 +1,32 @@
+<!--
+  Image Slider Project
+  This HTML file sets up the structure for a simple image slider with navigation buttons.
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Slider</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the slider and navigation buttons -->
     <div class="slider-container">
-        <div class="slider">
-            <img src="image\download 5.png" alt="image">
-            <img src="image/download 6.png" alt="image">
-            <img src="image/download 7.png" alt="image">
-            <img src="image/download 10.png" alt="image">
-        </div>
-        <button class="prev">Prev</button>
-        <button class="next">Next</button>
+      <!-- Slider holds all the images to be displayed -->
+      <div class="slider">
+        <!-- Each image in the slider -->
+        <img src="image\download 5.png" alt="image" />
+        <img src="image/download 6.png" alt="image" />
+        <img src="image/download 7.png" alt="image" />
+        <img src="image/download 10.png" alt="image" />
+      </div>
+      <!-- Navigation buttons for previous and next image -->
+      <button class="prev">Prev</button>
+      <button class="next">Next</button>
     </div>
+    <!-- Link to external JavaScript for slider functionality -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,34 +1,46 @@
-.slider-container {border-radius: 10px;
-    top: 60px;
-    left: 30%;
-    width: 600px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
+/* Main container for the slider, sets size and position */
+.slider-container {
+  border-radius: 10px;
+  top: 60px;
+  left: 30%;
+  width: 600px;
+  height: 300px;
+  overflow: hidden; /* Hide overflow for sliding effect */
+  position: relative; /* For absolute positioning of buttons */
 }
-.slider{
-    display: flex;
-    transition: transform 1s ease-in-out;
+
+/* Flex container for images, enables horizontal sliding */
+.slider {
+  display: flex;
+  transition: transform 2s ease-in-out; /* Smooth slide animation */
 }
-.slider img{
-    width: 600px;
-    height: 300px;
-    object-fit: fill;
+
+/* Style for each image in the slider */
+.slider img {
+  width: 600px;
+  height: 300px;
+  object-fit: fill; /* Stretch image to fill container */
 }
-.slider-container button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(240,240,240,0.2);
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: white;
+
+/* Style for navigation buttons (Prev/Next) */
+.slider-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(240, 240, 240, 0.2); /* Semi-transparent background */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
 }
-.slider-container .prev{
-    left: 10px;
+
+/* Position the Prev button on the left */
+.slider-container .prev {
+  left: 10px;
 }
-.slider-container .next{
-    right: 10px;
+
+/* Position the Next button on the right */
+.slider-container .next {
+  right: 10px;
 }

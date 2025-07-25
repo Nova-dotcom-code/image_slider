@@ -36,5 +36,5 @@ function slidePrev() {
 prevBtn.addEventListener("click", slidePrev);
 nextBtn.addEventListener("click", slideNext);
 
-// Automatically slide to the next image every 3 seconds
-setInterval(slideNext, 3000);
+// Optional: Automatically slide to the next image every 3 seconds
+setInterval(slideNext, 4000);
