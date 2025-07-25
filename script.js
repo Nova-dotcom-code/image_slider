@@ -9,7 +9,7 @@ const nextBtn = document.querySelector(".next");
 // Initialize the current image index
 let counter = 0;
 // Get the width of a single image (assumes all images have the same width)
-imageWidth = images[0].clientWidth;
+let imageWidth = images[0].clientWidth;
 
 // Function to slide to the next image
 function slideNext() {
