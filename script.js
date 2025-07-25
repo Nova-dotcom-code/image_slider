@@ -18,4 +18,6 @@ function slidePrev(){
         counter = images.length - 1;
     }
     slider.style.transform = `translate(${-imageWidth * counter}px)`;
-}
+};
+prevBtn.addEventListener('click', slidePrev);
+nextBtn.addEventListener('click', slideNext);
